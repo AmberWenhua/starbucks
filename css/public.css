@@ -1,0 +1,529 @@
+body{
+    font-family: "微软雅黑","黑体";
+}
+a{
+    text-decoration: none;
+}
+a:focus{
+    color: #a98e67;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+dl,dd,dt{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+.home_h2{
+    font-size: 30px;
+    color: #fff;
+    line-height: 1em;
+    text-align: center;
+    font-weight: 500;
+}
+.home_h3{
+    font-size: 13px;
+    color: #a98e67;
+    line-height: 1.9em;
+    text-align: center;
+    font-weight: 600;
+}
+.home_p{
+    font-size: 20px;
+    color: #3d3d3d;
+    line-height: 1.7em;
+    text-align: center;
+}
+.button-login{
+    padding: 3px 40px;
+    border: 2px solid #a98e67;
+    display: inline-block;
+    color: #a98e67;
+    font-size: 14px;
+    font-weight: 600;
+}
+.button-login:hover{
+    background: #a98e67;
+    color: #fff;
+    text-decoration: none;
+}
+i{
+    width: 0;
+    height: 0;
+    border: 4px solid transparent;
+    border-top-color: #fff;
+    float: right;
+    margin-top: 12px;
+}
+a:hover i{
+    border-top-color: #b89f7a;
+}
+
+
+/*侧边栏*/
+.asidenav{
+    width: 270px;
+    height: 100%;
+    overflow: auto;/*超过的部分会出现滚动条*/
+    background: #292929;
+    position: fixed;
+    top:0;
+    left: -270px;
+    z-index: 20;
+    -webkit-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+}
+.asidenav .list{
+    list-style: none;
+    padding: 0;
+}
+
+.asidenav .list a{
+    padding: 10px 15px;
+    display: block;
+    font-size: 15px;
+    color: #fff;
+    line-height: 1.8em;
+}
+.asidenav .list a:hover{
+    color: #b89f7a;
+}
+.asidenav .top{
+    padding: 10px 0;
+    border-bottom: 1px solid #525252;
+}
+.asidenav .top a{
+    color: #b89f7a;
+}
+.asidenav .top a:hover{
+    color: #fff;
+}
+.asidenav .list ul{
+    padding: 0;
+    display: none;
+}
+.asidenav .list ul a{
+    display: block;
+    padding: 5px 0 5px 25px;
+    color: #aaa;
+}
+
+/*头部*/
+header{
+    padding: 15px 0;
+    -webkit-box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    background: #fff;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+/*菜单*/
+.menu{
+    text-align: center;
+    width: 30px;
+    cursor: pointer;
+    margin: 15px 10px;
+}
+.menu .glyphicon-menu-hamburger{
+    font-size: 24px;
+    opacity:0.6;
+}
+.menu:hover .glyphicon-menu-hamburger{
+    opacity: 1;
+}
+
+/*logo部分*/
+.logo{
+    display: block;
+    margin: 0 auto;
+    width: 73px;
+}
+.logo img{
+    width: 100%;
+}
+
+.on{
+    padding: 0;
+}
+.on .menu{
+    margin:5px 10px;
+}
+.on .logo{
+    width:50px;
+}
+.on .callout{
+    font-size:14px;
+    margin:5px 10px;
+}
+
+
+/*登陆部分*/
+.callout{
+    font-size: 16px;
+    color: #4e4e4e;
+    margin: 15px 10px;
+}
+.callout a{
+    font-size: 14px;
+    font-weight: 600;
+    color:#b89f7a;
+}
+.callout a:hover{
+    color: #967a50;
+    text-decoration: none;
+}
+
+/*海报区域*/
+.banner{
+    position: relative;
+    margin-top: 100px;
+}
+.banner img{
+    width: 100%;
+    max-width: 100%;
+}
+.banner span{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 110px;
+    height: 50px;
+    margin-left:-55px;
+    background-color: #b89f7a;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+}
+.banner span:hover{
+    background: #967a50;
+}
+
+/*星享俱乐部*/
+.club{
+    background: #1f1f1f;
+    width: 100%;
+    overflow: hidden;
+
+}
+.club .container{
+    padding: 80px 100px;
+    position: relative;
+}
+.club .home_p{
+    color: #999;
+    padding: 20px 0 20px;
+}
+.club .button{
+    text-align: center;
+    font-size: 0;
+}
+.club .button a{
+    margin: 0 15px;
+}
+
+/*APP模块*/
+.app{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.app .container{
+    position: relative;
+    width: 100%;
+}
+.app .container .mytable{
+    display: table;/*将模拟表格*/
+    width: 55%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    /*top:0;*/
+}
+.app .cell{
+    display: table-cell;
+    vertical-align: middle;
+}
+.app .cell .home_h3{
+    text-align: left;
+}
+.app .button {
+    font-size: 0;
+}
+.app .button a{
+    margin-right: 20px;
+}
+.app .button .button-login{
+    padding: 14px 40px;
+}
+.app p{
+    font-size: 16px;
+    line-height: 1.8em;
+    color: #3d3d3d;
+    text-align: justify;
+}
+.app .pic{
+    width: 100%;
+}
+
+/*活动区*/
+.activity{
+    width: 100%;
+    overflow: hidden;
+}
+.activity .box{
+    display: block;
+    padding: 0;
+    position: relative;
+}
+.activity .box img{
+    width: 100%;
+}
+.activity .text{
+    position: absolute;
+    bottom:0;
+    left: 33%;
+}
+
+/*精选*/
+.barista{
+    padding: 80px 0;
+    background: #f5f5f5;
+}
+.barista h2{
+    color: #3d3d3d;
+}
+.barista hr{
+    width: 150px;
+    border-top-color: #d6d6d6;
+    margin: 30px auto 25px;
+}
+.barista .container p{
+    font-size: 18px;
+    color: #525252;
+}
+
+/*轮播图区域*/
+.barista .swiper-container{
+    margin-top: 60px;
+    padding-bottom: 50px;
+
+}
+.barista .swiper-slide{
+    width: 280px;
+}
+.barista .swiper-slide img{
+    width: 100%;
+}
+.barista .text{
+    position: absolute;
+    bottom:25px;
+    left: 0;
+    padding: 0 20px;
+    line-height: 1.2em;
+
+}
+.barista .text h3{
+    color: saddlebrown;
+}
+.barista .text p{
+    font-size: 18px;
+    color: white;
+}
+.barista .swiper-pagination-bullet{
+    width: 10px;
+    height: 10px;
+    opacity: 0.6;
+}
+.swiper-pagination-bullet-active {
+    background: #ae9061;
+    opacity: 1;
+}
+
+/*简介*/
+.reserve{
+    padding: 40px 0;
+    background:#060606;
+}
+.reserve .mytable{
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+.reserve .cell{
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+.reserve .cell .home_p{
+    color: #707070;
+}
+.reserve .button{
+    font-size: 0;
+}
+.reserve .button a{
+    margin: 30px 15px;
+}
+
+/*底部*/
+footer{
+    background: #292929;
+    color: #a3a3a3;
+    padding: 40px 0;
+    line-height: 1.6em;
+}
+footer .container .row-1{
+    height: 300px;
+}
+footer .row-1 dl{
+    color: #fff;
+}
+footer .row-1 dt{
+    font-size: 16px;
+}
+footer .row-1 dd{
+    padding: 10px 0;
+    color: #fff;
+}
+footer .row-1 dd a{
+    color: #aaa;
+    font-size: 15px;
+}
+footer .row-1 dd a:hover{
+    text-decoration: underline;
+}
+
+footer .row-2{
+    margin-top: 20px;
+    position: relative;
+}
+footer .row-2 p{
+    font-size: 10px;
+    margin-bottom: -2px;
+}
+footer .row-2 a{
+    color: #aaa;
+    font-size: 10px;
+}
+footer .row-2 a:hover{
+    text-decoration: underline;
+}
+footer .icon{
+    float: right;
+    position: absolute;
+    top:0;
+    right: 10%;
+}
+footer .weixin{
+    height: 38px;
+    width: 38px;
+    float: left;
+    background: url("../images/wechat.svg");
+}
+footer .weixin:hover{
+    cursor: pointer;
+}
+footer .weibo {
+    float: right;
+    height: 38px;
+    width: 38px;
+    background: url("../images/weibo.svg");
+    margin-left: 20px;
+}
+footer .weibo:hover{
+    cursor: pointer;
+}
+footer .bei{
+    color: #a3a3a3;
+    background: url("../images/icpicon.png") no-repeat left center;
+    padding-left: 25px;
+}
+
+/*全屏背景*/
+.bg{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.8);
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    display: none;
+}
+
+/*响应式设置*/
+@media (max-width: 768px) {
+    .club .container{
+        padding: 30px 35px 60px;
+    }
+    .club .button a{
+        margin: 10px 0;
+        width: 100%;
+    }
+    .app .container{
+        padding: 0;
+        margin: 0;
+        position: relative;
+    }
+    .app .container .mytable{
+        width: 50%;
+        bottom: 8%;
+        left: 25%;
+    }
+    .app .pic{
+        max-width: 100%;
+    }
+    .app .cell h3{
+        font-size: 20px;
+    }
+    .app .button a{
+        margin-top: 20px;
+    }
+    .reserve .container{
+        padding: 0 45px;
+    }
+    .reserve .cell{
+        display: block;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    .reserve .cell .home_h3{
+        font-size: 25px;
+        margin-bottom: 30px;
+    }
+    .reserve .cell .home_p{
+        margin-bottom: 20px;
+    }
+    .reserve .button a{
+        margin: 10px 0;
+        width: 100%;
+    }
+    .reserve .cell img{
+        width: 80%;
+    }
+    footer .row-1 dl{
+        margin-bottom: 35px;
+    }
+    footer .row-1 dd{
+        display: none;
+    }
+    footer .row-1 dd a{
+        padding-left: 10px;
+    }
+    footer .row-1 dt:hover{
+        color: #b89f7a;
+    }
+    footer .row-1 dt:hover i{
+        border-top-color: #b89f7a;
+    }
+}
